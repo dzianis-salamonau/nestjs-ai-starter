@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nestjs-ai-starter-config
+data:
+  NODE_ENV: production
+  PORT: '3000'
+  REDIS_HOST: redis
+  REDIS_PORT: '6379'
+  LOG_LEVEL: info
+  AI_DEFAULT_PROVIDER: openhub
+  OPENAI_MODEL: gpt-4o-mini
+  JWT_EXPIRES_IN: 7d
+  THROTTLE_TTL_MS: '60000'
+  THROTTLE_LIMIT: '100'
